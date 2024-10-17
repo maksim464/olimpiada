@@ -65,10 +65,14 @@ button {
     border: none;
     cursor: pointer;
     font-size: 16px;
+    transition: 0.3s;
 }
 
 button:hover {
     background-color: #45a049;
+    transform: scale(1.1);
+    transition: 0.3s;
+    
 }
 
 .about {
@@ -143,7 +147,7 @@ h3{
     color: #777;
     font-size: 16px;
 }
-img {margin: 20px; border: solid black 5px; width: 250px; height: 200px; border-radius: 10%;}
+img {margin: 20px; border: solid black 5px;  border-radius: 10%; align-items: center; width:350px ; height: 250px;}
 
 
 h4 {
@@ -152,6 +156,15 @@ h4 {
 a{
     color: white; text-decoration: none;
 }
+h5{
+    font-size: 30px; text-align: center; }
+    h6{
+    font-size: 30px; text-align: center; }
 
-    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2549.759893947099!2d28.626846876426796!3d50.27774167155964!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x472c652686d95ae5%3A0xe809806e2e84a8aa!2z0KjQutC-0LvQsCDihJY1!5e0!3m2!1sru!2sua!4v1729076731687!5m2!1sru!2sua" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 
+    iframe{
+        margin-left: 29pc;
+    }
+    
+
+   
