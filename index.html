@@ -87,13 +87,17 @@
             <p>&copy; 2024 Школа "Сонечко". Всі права захищені.</p>
         </div>
         <script>
-    window.onload = function() {
-        // Перевіряємо, чи користувач зайшов з мобільного пристрою
-        if (/Mobi|Android/i.test(navigator.userAgent)) {
-            alert("Зайдіть будь ласка з комп'ютера");
+        window.onload = function() {
+            // Перевіряємо, чи користувач зайшов з мобільного пристрою за допомогою ширини екрана
+            if (window.innerWidth <= 800 && window.innerHeight <= 600) {
+                alert("Зайдіть будь ласка з комп'ютера");
+            } 
+            // Додатково перевіряємо на основі userAgent
+            else if (/Mobi|Android|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+                alert("Зайдіть будь ласка з комп'ютера");
+            }
         }
-    }
-</script>
+    </script>
     </footer>
 
     <script src="scripts.js"></script>
