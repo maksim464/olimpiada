@@ -7,7 +7,6 @@
     <link rel="stylesheet" href="style.css">
 </head>
      <style>
-        /* Перевірка ширини екрану та можливості торкання */
         @media only screen and (max-width: 1280px) and (hover: none) and (pointer: coarse) {
             #mobileAlert {
                 display: block;
@@ -94,11 +93,22 @@
           <a href="https://www.facebook.com/share/g/BC3ePvXkSUxSWZfy/"> Фейсбук Ліцею №5</a>
             <p>&copy; 2024 Школа "Сонечко". Всі права захищені.</p>
         </div>
-        <div id="mobileAlert" style="display:none;">
+        <div id="mobileAlert">
         <script>
-            alert("Зайдіть будь ласка з комп'ютера");
+            function showAlert() {
+                alert("Зайдіть будь ласка з комп'ютера");
+            }
+            
+            function checkMobile() {
+                if (window.matchMedia && window.matchMedia("(max-width: 1280px) and (hover: none) and (pointer: coarse)").matches) {
+                    showAlert();
+                }
+            }
+
+            document.addEventListener('DOMContentLoaded', checkMobile);
+            window.addEventListener('resize', checkMobile);
         </script>
-    </div>
+        </div>
     </footer>
 
     <script src="scripts.js"></script>
