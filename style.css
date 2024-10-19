@@ -222,5 +222,9 @@ h5{
             right: 0;
         }
     h2{text-align:center;}
+.map{
+    display: flex;
+    justify-content: center;
+}
 
    
